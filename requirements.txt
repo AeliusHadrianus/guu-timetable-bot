@@ -13,4 +13,3 @@ pytest>=8.2
 anyio>=4.2
 python-pptx>=0.6
 fpdf>=1.7
-reportlab>=4.1
