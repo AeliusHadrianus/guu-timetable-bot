@@ -1,0 +1,16 @@
+services:
+  - type: background_worker
+    name: guu-timetable-bot
+    env: python
+    plan: free
+    buildCommand: |
+      pip install -r requirements.txt
+    startCommand: |
+      python -m app.bot
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: DB_URL
+        value: sqlite+aiosqlite:///schedule.db

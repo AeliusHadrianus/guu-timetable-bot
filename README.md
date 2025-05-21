@@ -1,1 +1,1 @@
-# guu-timetable-bot
+# GUU Timetable Bot\n\nFull README content in canvas.
